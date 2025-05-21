@@ -25,7 +25,7 @@ Maven
 Вариант 1: Запуск с помощью Docker
 Склонируйте репозиторий:
 
-git clone [<repository-url>](https://github.com/soileks/TestWebRaise)
+git clone https://github.com/soileks/TestWebRaise
 
 Соберите и запустите контейнеры:
 
