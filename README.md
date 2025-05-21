@@ -51,19 +51,27 @@ CREATE USER postgres WITH PASSWORD 'postgres';
 GRANT ALL PRIVILEGES ON DATABASE subscription_db TO postgres;
 
 Настройте приложение:
+
 Убедитесь, что application.yml содержит правильные параметры подключения (указать свои username и password от БД):
 
 spring:
+
   datasource:
+  
     url: jdbc:postgresql://localhost:5432/subscription_db
+    
     username: postgres
+    
     password: postgres
+    
 Запустите приложение:
 
 mvn spring-boot:run
 
 ## API Endpoints
+
 Пользователи
+
 POST /users - Создать пользователя
 
 GET /users/{id} - Получить пользователя
@@ -73,6 +81,7 @@ PUT /users/{id} - Обновить пользователя
 DELETE /users/{id} - Удалить пользователя
 
 Подписки
+
 POST /users/{id}/subscriptions - Добавить подписку
 
 GET /users/{id}/subscriptions - Получить подписки пользователя
