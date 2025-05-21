@@ -23,6 +23,7 @@ Maven
 ## Запуск приложения
 
 Вариант 1: Запуск с помощью Docker
+
 Склонируйте репозиторий:
 
 git clone https://github.com/soileks/TestWebRaise
@@ -37,14 +38,18 @@ http://localhost:8080
 
 
 Вариант 2: Локальный запуск (без Docker)
+
 Установите и запустите PostgreSQL:
 
 Создайте БД:
 
 sql
 CREATE DATABASE subscription_db;
+
 CREATE USER postgres WITH PASSWORD 'postgres';
+
 GRANT ALL PRIVILEGES ON DATABASE subscription_db TO postgres;
+
 Настройте приложение:
 Убедитесь, что application.yml содержит правильные параметры подключения (указать свои username и password от БД):
 
